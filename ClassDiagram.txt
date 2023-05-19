@@ -1,0 +1,37 @@
++-----------------------+        +-----------------------+        +-----------------------+
+|      PNMImageTest      |        |         PNMImage       |        |         Pixel         |
++-----------------------+        +-----------------------+        +-----------------------+
+|   - RED: Pixel        |        |   - type: String       |        |   - red: int           |
+|   - GREEN: Pixel      |        |   - comment: String    |        |   - green: int         |
+|   - BLUE: Pixel       |        |   - maxValue: int      |        |   - blue: int          |
+|   - YELLOW: Pixel     |        |   - pixels: Pixel[][]  |        +-----------------------+
+|   - WHITE: Pixel      |        |                       |
+|   - BLACK: Pixel      |        |   + readPNM(filename)  |
+|   - MAGENTA: Pixel    |        |   + readBinaryPNM(filename) |
+|   - GRAY: Pixel       |        |   + writePNM(filename, image) |
+|                       |        |   + writeBinaryPNM(filename, image) |
+|   + equalsPNM()       |        |   + stack(alpha, foreground) |
+|   + notEqualsPNM()    |        |   + getPixel(x, y)      |
+|   + readBinaryPNM()   |        |                       |
+|   + stack()           |        +-----------------------+
+|   + writePNM()        |
+|   + writeBinaryPNM()  |
+|   + getPixel()        |
+|   + stackImages()     |
++-----------------------+
+
++---------------+
+|    Type       |
++---------------+
+| + ASCII       |
+| + BINARY      |
++---------------+
+
++-----------------+
+|    PixelTest    |
++-----------------+
+|                 |
++-----------------+
+| - testNotEquals()|
+| - testEquals()  |
++-----------------+
